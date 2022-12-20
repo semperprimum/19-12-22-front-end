@@ -11,7 +11,7 @@
             <h3 class="text-center">{{ product.name }}</h3>
             <img :src="require('../../assets/img/' + product.image) " alt="image">
             <p class="description">{{ product.description }}</p>
-            <h3 class="text-center">${{ product.price.toFixed(2) }}</h3>
+            <h3 class="text-center">Цена: {{ product.price.toFixed(2) }} тг.</h3>
 
             <div class="cart-total" v-if="product_total">
                 <h3>В Корзине:</h3>

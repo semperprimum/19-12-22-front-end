@@ -4,7 +4,7 @@
             <h3>{{product.name}}</h3>
             <img :src="require('../../assets/img/' + product.image) " alt="image" style="width:30%; aspect-ratio:3/2; object-fit:contain;">
             <h4>В Корзине: {{product.quantity}}</h4>
-            <h4>Общая стоимость: {{item_cost.toFixed(2)}}</h4>
+            <h4>Общая стоимость: {{item_cost.toFixed(2)}} тг.</h4>
         </div>
 
         <p>{{ description }}...</p>

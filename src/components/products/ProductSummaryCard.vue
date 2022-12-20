@@ -2,7 +2,7 @@
     <div class="card">
         <h3> {{ product.name }}</h3>
         <img :src="require('../../assets/img/' + product.image) " alt="image" style="width:70%; aspect-ratio:3/2; object-fit:contain;">
-        <h5 class="price">Price: ${{ product.price.toFixed(2) }}</h5>
+        <h5 class="price">Цена: {{ product.price.toFixed(2) }} тг.</h5>
         <p class="description">Описание: {{ description }}...</p>
         <p class="text-muted">{{ product.category }}</p>
         <button class="view-product-button" @click="$emit('view-product', product)">Открыть</button>
